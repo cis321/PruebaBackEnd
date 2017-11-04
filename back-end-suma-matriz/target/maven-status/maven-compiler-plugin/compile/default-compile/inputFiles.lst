@@ -1,0 +1,9 @@
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/services/MatrixResource.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/exceptions/BusinessException.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/SumaMatriz.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/representations/MatrixAndOperationsDTO.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/config/SumaMatrizConfig.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/exceptions/IException.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/businesses/MatrixBusiness.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/exceptions/TechnicalException.java
+/home/cis/workspace/PruebaBackEnd/back-end-suma-matriz/src/main/java/co/rappi/backEndSumaMatriz/representations/Operation.java
