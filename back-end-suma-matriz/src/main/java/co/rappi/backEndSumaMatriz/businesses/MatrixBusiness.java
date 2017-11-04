@@ -44,11 +44,11 @@ public class MatrixBusiness {
 			
 			if(operation.getOperation().equals(QUERY)) {
 				
-				results.add(query(matrix, operation.getX1(), operation.getX2(), operation.getY1(), operation.getY2(), operation.getZ1(), operation.getZ2()));
+				results.add(query(matrix, operation.getX1()-1, operation.getX2()-1, operation.getY1()-1, operation.getY2()-1, operation.getZ1()-1, operation.getZ2()-1));
 				
 			} else if(operation.getOperation().equals(UPDATE)) {
 				
-				matrix[operation.getX()][operation.getY()][operation.getZ()] = operation.getW();
+				matrix[operation.getX()-1][operation.getY()-1][operation.getZ()-1] = operation.getW();
 				
 			}else {
 				
@@ -62,9 +62,9 @@ public class MatrixBusiness {
 	private String query(int[][][] matrix, int x1, int x2, int y1, int y2, int z1, int z2) {
 		
 		int result = 0;
-		for (int i = x1; i < x2; i++) {
-			for (int j = y1; j <y2 ; j++) {
-				for (int k = z1; k < z2; k++) {
+		for (int i = x1; i <= x2; i++) {
+			for (int j = y1; j <= y2 ; j++) {
+				for (int k = z1; k <= z2; k++) {
 				result += matrix[i][j][k];
 				}
 			}
