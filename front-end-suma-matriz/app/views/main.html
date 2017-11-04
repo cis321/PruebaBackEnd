@@ -1,23 +1,83 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <h1>Suma Matriz 3D</h1>
 </div>
 
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <div class="col-md-12">
+    <h3>Ingresar tamaño de la matriz</h3>
+  </div>
+  <div class="col-md-4">
+    <p>Tamaño eje x</p>
+    <input type="text" id="xLenght" class="form-control" ng-model="MatrixAndOperationsDTO.xLength">
+  </div>
+  <div class="col-md-4">
+    <p>Tamaño eje y</p>
+    <input type="text" id="yLenght" class="form-control" ng-model="MatrixAndOperationsDTO.yLength">
+  </div>
+  <div class="col-md-4">
+    <p>Tamaño eje z</p>
+    <input type="text" id="zLenght" class="form-control" ng-model="MatrixAndOperationsDTO.zLength">
+  </div>
+  <div class="col-md-12">
+    <h3>Ingresar Operaciones</h3>
+  </div>
+  <div class="col-md-12">
+    <p>Oprima un botón para agregar una operación</p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary" ng-click="addUpdate()">Agregar Update</button>
+      <button type="button" class="btn btn-primary" ng-click="addQuery()">Agregar Query</button>
+    </div>
+  </div>
+  <div ng-repeat="operation in MatrixAndOperationsDTO.operations" class="col-md-12">
+    <br><br>
+    <p>{{operation.operationName}}</p>
+    <div class="col-md-12" ng-if="operation.operationName === 'QUERY'">
+      <div class="col-md-2">
+        <p>x1</p>
+        <input type="text" id="x1" class="form-control" ng-model="operation.x1">
+      </div>
+      <div class="col-md-2">
+        <p>y1</p>
+        <input type="text" id="y1" class="form-control" ng-model="operation.y1">
+      </div>
+      <div class="col-md-2">
+        <p>z1</p>
+        <input type="text" id="z1" class="form-control" ng-model="operation.z1">
+      </div>
+      <div class="col-md-2">
+        <p>x2</p>
+        <input type="text" id="x2" class="form-control" ng-model="operation.x2">
+      </div>
+      <div class="col-md-2">
+        <p>y2</p>
+        <input type="text" id="y2" class="form-control" ng-model="operation.y2">
+      </div>
+      <div class="col-md-2">
+        <p>z2</p>
+        <input type="text" id="z2" class="form-control" ng-model="operation.z2">
+      </div>
+    </div>
+    <div class="col-md-12" ng-if="operation.operationName === 'UPDATE'">
+      <div class="col-md-2">
+        <p>x</p>
+        <input type="text" id="x" class="form-control" ng-model="operation.x">
+      </div>
+      <div class="col-md-2">
+        <p>y</p>
+        <input type="text" id="y" class="form-control" ng-model="operation.y">
+      </div>
+      <div class="col-md-2">
+        <p>z</p>
+        <input type="text" id="z" class="form-control" ng-model="operation.z">
+      </div>
+      <div class="col-md-2">
+        <p>W</p>
+        <input type="text" id="W" class="form-control" ng-model="operation.W">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <br><br>
+    <button type="button" class="btn btn-success">Enviar</button>
+  </div>
 </div>

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Operation {
 	
-	private final String operation;
+	private final String operationName;
 	
 	private final int x;
 	
@@ -28,9 +28,9 @@ public class Operation {
 	private final int z2;
 	
 	@JsonCreator
-	public Operation(@JsonProperty("operation") String opetarion, @JsonProperty("x") int x, @JsonProperty("y") int y, @JsonProperty("z") int z, @JsonProperty("W") int W, @JsonProperty("x1") int x1, @JsonProperty("x2") int x2, @JsonProperty("y1") int y1, @JsonProperty("y2") int y2, @JsonProperty("z1") int z1, @JsonProperty("z2") int z2) {
+	public Operation(@JsonProperty("operationName") String opetarionName, @JsonProperty("x") int x, @JsonProperty("y") int y, @JsonProperty("z") int z, @JsonProperty("W") int W, @JsonProperty("x1") int x1, @JsonProperty("x2") int x2, @JsonProperty("y1") int y1, @JsonProperty("y2") int y2, @JsonProperty("z1") int z1, @JsonProperty("z2") int z2) {
 		
-		this.operation = opetarion;
+		this.operationName = opetarionName;
 		this.x = x;
 		this.y = y;
 		this.z = z;
@@ -44,7 +44,7 @@ public class Operation {
 	}
 
 	public String getOperation() {
-		return operation;
+		return operationName;
 	}
 
 	public int getX() {

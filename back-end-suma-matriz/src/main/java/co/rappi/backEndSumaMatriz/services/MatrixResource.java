@@ -28,7 +28,7 @@ public class MatrixResource {
 	}
 
 	@POST
-	public Response matrixAndOperations(MatrixAndOperationsDTO matrixAndOperationsDTO) {
+	public Response getResults(MatrixAndOperationsDTO matrixAndOperationsDTO) {
 
 		try {
 
