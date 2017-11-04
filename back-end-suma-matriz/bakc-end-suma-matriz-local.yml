@@ -1,0 +1,20 @@
+mongoConfig:
+  host: localhost
+  databaseName: test
+  username: mediUser
+  password: qwe
+  
+server:
+  applicationConnectors:
+  - type: http
+    port: 8094
+  adminConnectors:
+  - type: http
+    port: 8095
+  
+wsClientsConfig:
+  authmanagerUrl: http://localhost:8090/
+  createUserPath: /user
+  
+templateConfig:
+  templateRoot: ./templates
