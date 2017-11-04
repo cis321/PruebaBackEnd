@@ -38,7 +38,7 @@ Malas pŕacticas encontradas:
 * Es una única funcion con toda la lógica. Se debería separar las funcionalidades en diferentes métodos.
 * Las notificaciones no están centralizadas (no hay reuso ni estandarización de los mensajes).
 
-### Preguntas
+# Preguntas
 
 * El principio de responsabilidad única hace referencia a que los metodos o fuciones deben hacer una única cosa. Esto sirve para el reuso del código y la mantenibilidad.
 * Un código que cumpla los estandares propuestos por SonarQuebe. Yo soy muy estricto con las buenas pŕacticas con el código. La principal característica es que el código lo pueda leer cualquier otro programador y que sea mantenible.  
